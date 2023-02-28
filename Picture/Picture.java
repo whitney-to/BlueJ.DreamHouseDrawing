@@ -36,6 +36,11 @@ public class Picture
     private Square door4;
     private Square pot;
     private Circle flower;
+    private Circle tree;
+    private Triangle trunk;
+    private Square carBody;
+    private Circle wheel;
+    private Triangle carSide;
 
 
     /**
@@ -61,7 +66,7 @@ public class Picture
         sky = new Square();
         sky.changeColor("green");
         sky.moveHorizontal(-100);
-        sky.moveVertical(100);
+        sky.moveVertical(150);
         sky.changeSize(600);
         sky.makeVisible();
                 
@@ -400,7 +405,58 @@ public class Picture
         window2.moveVertical(114);
         window2.changeSize(5);
         window2.makeVisible();
+        //------------------------------
+        
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(-20);
+        window.moveVertical(120);
+        window.changeSize(20);
+        window.makeVisible();
+        
+        window2 = new Square();
+        window2.changeColor("yellow");
+        window2.moveHorizontal(-17); //+3
+        window2.moveVertical(123); // +3
+        window2.changeSize(5); // -15
+        window2.makeVisible();
+                
+        window2 = new Square();
+        window2.changeColor("yellow");
+        window2.moveHorizontal(-9); //+8
+        window2.moveVertical(123);
+        window2.changeSize(5);
+        window2.makeVisible();
+                
+        window2 = new Square();
+        window2.changeColor("yellow");
+        window2.moveHorizontal(-17);
+        window2.moveVertical(131);
+        window2.changeSize(5);
+        window2.makeVisible();
+             
+        window2 = new Square();
+        window2.changeColor("yellow");
+        window2.moveHorizontal(-9);
+        window2.moveVertical(131);
+        window2.changeSize(5);
+        window2.makeVisible();
+        
         //-------------------------------
+        flower = new Circle();
+        flower.changeSize(15);
+        flower.changeColor("magenta");
+        flower.moveHorizontal(90);
+        flower.moveVertical(140);
+        flower.makeVisible();
+        
+        flower = new Circle();
+        flower.changeSize(15);
+        flower.changeColor("magenta");
+        flower.moveHorizontal(80);
+        flower.moveVertical(140);
+        flower.makeVisible();
+        
         pot =  new Square();
         pot.changeColor("black");
         pot.moveHorizontal(38);
@@ -414,22 +470,21 @@ public class Picture
         pot.moveVertical(160);
         pot.changeSize(15);
         pot.makeVisible();
-        
-        flower = new Circle();
-        flower.changeSize(15);
-        flower.changeColor("magenta");
-        flower.moveHorizontal(90);
-        flower.moveVertical(140);
-        flower.makeVisible();
-        
-        flower = new Circle();
-        flower.changeSize(15);
-        flower.changeColor("magenta");
-        flower.moveHorizontal(80);
-        flower.moveVertical(140);
-        flower.makeVisible();
-        
         //
+        flower = new Circle();
+        flower.changeSize(15);
+        flower.changeColor("magenta");
+        flower.moveHorizontal(154);
+        flower.moveVertical(140);
+        flower.makeVisible();
+        
+        flower = new Circle();
+        flower.changeSize(15);
+        flower.changeColor("magenta");
+        flower.moveHorizontal(144);
+        flower.moveVertical(140);
+        flower.makeVisible();
+        
         pot =  new Square();
         pot.changeColor("black");
         pot.moveHorizontal(102);
@@ -439,24 +494,123 @@ public class Picture
         
         pot =  new Square();
         pot.changeColor("black");
-        pot.moveHorizontal(52);
+        pot.moveHorizontal(116);
         pot.moveVertical(160);
         pot.changeSize(15);
         pot.makeVisible();
+        //----------------
+        tree = new Circle();
+        tree.changeSize(30);
+        tree.changeColor("magenta");
+        tree.moveHorizontal(220);
+        tree.moveVertical(90);
+        tree.makeVisible();
         
-        flower = new Circle();
-        flower.changeSize(15);
-        flower.changeColor("magenta");
-        flower.moveHorizontal(90);
-        flower.moveVertical(140);
-        flower.makeVisible();
+        tree = new Circle();
+        tree.changeSize(30);
+        tree.changeColor("magenta");
+        tree.moveHorizontal(200);
+        tree.moveVertical(90);
+        tree.makeVisible();
         
-        flower = new Circle();
-        flower.changeSize(15);
-        flower.changeColor("magenta");
-        flower.moveHorizontal(80);
-        flower.moveVertical(140);
-        flower.makeVisible();
+        tree = new Circle();
+        tree.changeSize(30);
+        tree.changeColor("magenta");
+        tree.moveHorizontal(240);
+        tree.moveVertical(90);
+        tree.makeVisible();
+        
+        tree = new Circle();
+        tree.changeSize(30);
+        tree.changeColor("magenta");
+        tree.moveHorizontal(220);
+        tree.moveVertical(70);
+        tree.makeVisible();
+        
+        trunk = new Triangle();
+        trunk.changeColor("black");
+        trunk.changeSize(60, 10);
+        trunk.moveHorizontal(205);
+        trunk.moveVertical(140);
+        trunk.makeVisible();
+        //----------------------------
+        carBody = new Square();
+        carBody.changeColor("black");
+        carBody.makeVisible();
+        carBody.moveHorizontal(90);
+        carBody.moveVertical(210);
+        carBody.changeSize(20);
+        carBody.makeVisible();
+        
+        carBody = new Square();
+        carBody.changeColor("black");
+        carBody.makeVisible();
+        carBody.moveHorizontal(110);
+        carBody.moveVertical(210);
+        carBody.changeSize(20);
+        carBody.makeVisible();
+        
+        carBody = new Square();
+        carBody.changeColor("black");
+        carBody.makeVisible();
+        carBody.moveHorizontal(130);
+        carBody.moveVertical(210);
+        carBody.changeSize(20);
+        carBody.makeVisible();
+        
+        carBody = new Square();
+        carBody.changeColor("black");
+        carBody.makeVisible();
+        carBody.moveHorizontal(150);
+        carBody.moveVertical(210);
+        carBody.changeSize(20);
+        carBody.makeVisible();
+        
+        carSide = new Triangle();
+        carSide.changeColor("black");
+        carSide.changeSize(15, 40);
+        carSide.moveHorizontal(118);
+        carSide.moveVertical(230);
+        carSide.makeVisible();
+        
+        carSide = new Triangle();
+        carSide.changeColor("black");
+        carSide.changeSize(15, 40);
+        carSide.moveHorizontal(160);
+        carSide.moveVertical(230);
+        carSide.makeVisible();
+        
+        carBody = new Square();
+        carBody.changeColor("black");
+        carBody.makeVisible();
+        carBody.moveHorizontal(110);
+        carBody.moveVertical(195);
+        carBody.changeSize(20);
+        carBody.makeVisible();
+        
+        carBody = new Square();
+        carBody.changeColor("black");
+        carBody.makeVisible();
+        carBody.moveHorizontal(130);
+        carBody.moveVertical(195);
+        carBody.changeSize(20);
+        carBody.makeVisible();
+        
+        wheel = new Circle();
+        wheel.changeSize(20);
+        wheel.changeColor("yellow");
+        wheel.moveHorizontal(140);
+        wheel.moveVertical(210);
+        wheel.makeVisible();
+        
+        wheel = new Circle();
+        wheel.changeSize(20);
+        wheel.changeColor("yellow");
+        wheel.moveHorizontal(180);
+        wheel.moveVertical(210);
+        wheel.makeVisible();
+        
+        
     }
 
     /**
